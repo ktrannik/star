@@ -12,10 +12,10 @@ from telethon.tl.functions.messages import ImportChatInviteRequest
 # ==========================================
 # НАСТРОЙКИ
 # ==========================================
-API_ID = 
-API_HASH = ''
-SESSION_STRING = ''
-MY_USER_ID = 
+API_ID = os.getenv("API_ID")
+API_HASH = os.getenv("API_HASH")
+SESSION_STRING = os.getenv("SESSION_STRING")
+MY_USER_ID = os.getenv("MY_USER_ID")
 # ==========================================
 
 client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
